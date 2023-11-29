@@ -1,0 +1,15 @@
+app:
+  name: by-homeassi-poi-gateway-app
+  namespace: by-homeassi
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/by-homeassi-gateway
+  org: rhdh23-demo
+  name: by-homeassi-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: by-homeassi/poi-gateway-app
+  tag: latest
